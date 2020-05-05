@@ -5,6 +5,12 @@
     <a href="/profile">Profile</a>
 </div>
 <br />
+
+<% for(let i = 0; i < accounts.length; i++) { %>
+    <%- include('summary', accounts[i]) %>
+<% } %>
+
+
 <a href="/transfer">Transfer</a>
 
 <%- include('footer') %>
